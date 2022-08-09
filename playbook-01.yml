@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+    - name: Print message
+      debug:
+        msg: Hello Sebastian from Ansible World!
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: /Users/sek/Documents/Test/Create_Directory/some_directory
+        state: directory
+        mode: '0755'

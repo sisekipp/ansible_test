@@ -5,4 +5,5 @@
     tasks:
     - name: Print Message
       debug:
+        delay: 60
         msg: Hello from Ansible World!

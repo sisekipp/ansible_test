@@ -3,7 +3,10 @@
     gather_facts: false
 
     tasks:
+    - name: Pause for 5 minutes
+      ansible.builtin.pause:
+        minutes: 5
     - name: Print Message
       debug:
-        delay: 60
         msg: Hello from Ansible World!
+    

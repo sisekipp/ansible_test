@@ -10,5 +10,5 @@
       ansible.builtin.debug: msg="{{ lookup('ansible.builtin.url', 'https://ip-ranges.amazonaws.com/ip-ranges.json', split_lines=False) }}"
     - name: Pause for 2 minutes
       ansible.builtin.pause:
-        minutes: 2
+        seconds: 10
     
